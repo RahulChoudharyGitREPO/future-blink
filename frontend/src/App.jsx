@@ -46,12 +46,14 @@ function App() {
     setResponse('');
 
     try {
+      const API_URL = import.meta.env.VITE_API_URL || '';
+
       // Step 1: Get AI response
-      const { data } = await axios.post('/api/ask-ai', { prompt });
+      const { data } = await axios.post(`${API_URL}/api/ask-ai`, { prompt });
       setResponse(data.response);
 
       // Step 2: Save to MongoDB
-      await axios.post('/api/save', { prompt, response: data.response });
+      await axios.post(`${API_URL}/api/save`, { prompt, response: data.response });
     } catch (err) {
       setError(err.response?.data?.error || 'Something went wrong');
     } finally {
