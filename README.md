@@ -5,6 +5,10 @@ A minimal, production-quality MERN stack application that uses React Flow to cre
 ---
 
 ## 📸 Demo
+live Link: https://future-blink-ten.vercel.app/
+Demo Video: https://drive.google.com/file/d/17YoorKNNCU_Ro9WvOuZ10n2eX0BVtSKb/view?usp=sharing
+My Portfolio: www.rahulchoudhary.co.in
+
 
 **Prompt:** "What is 2+2?"  
 **Response:** "2+2 equals 4."
@@ -49,7 +53,10 @@ ai-flow/
 │   └── package.json
 └── README.md
 ```
-
+env Exmaple 
+PORT=5000
+OPENROUTER_API_KEY=
+MONGODB_URI=
 ---
 
 ## ✨ Features
